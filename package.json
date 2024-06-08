@@ -2,6 +2,8 @@
   "name": "next-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://qarisoft.github.io/next-page/",
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
