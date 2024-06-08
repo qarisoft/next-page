@@ -778,7 +778,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nextui-org/navbar@npm:2.0.32":
+"@nextui-org/navbar@npm:2.0.32, @nextui-org/navbar@npm:^2.0.32":
   version: 2.0.32
   resolution: "@nextui-org/navbar@npm:2.0.32"
   dependencies:
@@ -4526,12 +4526,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "next-page@workspace:."
   dependencies:
+    "@nextui-org/navbar": "npm:^2.0.32"
     "@nextui-org/react": "npm:^2.4.1"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     framer-motion: "npm:^11.2.10"
     next: "npm:14.2.3"
+    next-themes: "npm:^0.3.0"
     postcss: "npm:^8"
     react: "npm:^18"
     react-dom: "npm:^18"
@@ -4539,6 +4541,16 @@ __metadata:
     typescript: "npm:^5"
   languageName: unknown
   linkType: soft
+
+"next-themes@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "next-themes@npm:0.3.0"
+  peerDependencies:
+    react: ^16.8 || ^17 || ^18
+    react-dom: ^16.8 || ^17 || ^18
+  checksum: 10c0/72bd670ad6b9f547dc18cece340dfd1ac41e3e7b37eb321d4767db90bfa2c239f937011cd0efe35ca0081f1ea260051bc0868808ef39b0fbff2ddefd7146cec6
+  languageName: node
+  linkType: hard
 
 "next@npm:14.2.3":
   version: 14.2.3
