@@ -22,7 +22,7 @@ export default function Home() {
         aa = setTimeout(() => {
             setPImage(activeImage);
             setActiveImage(activeImage >= images.length - 1 ? 0 : activeImage + 1)
-        }, 3000)
+        }, 5000)
 
     }, [activeImage])
 
@@ -83,12 +83,12 @@ interface Props {
 
 function Item({className,index}: Props) {
     return (
-        <div className={`absolute slide-con h-full  md:right-[20%] mt-20 w-full md:max-w-4xl   flex flex-col z-20  ${className}`}>
+        <div className={`absolute slide-con h-full p-2  md:right-[20%] mt-20 w-full md:max-w-2xl   flex flex-col z-20  ${className}`}>
             <div className="flex-1"></div>
             <div className={`content  `}>
 
-                <h1  className="title ">احدث مشاريعنا</h1>
-                <h1 className="topic">
+                <h1  className="title text-2xl font-bold ">احدث مشاريعنا</h1>
+                <h1 className="topic text-4xl font-bold">
 
                     مشروع فيلا
 
@@ -100,14 +100,12 @@ function Item({className,index}: Props) {
                 <div className="des text-white">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
                     minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
-                    facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi
-                    reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum
                     laudantium?
                 </div>
 
-                <div className="buttons">
-                    <button>SEE MORE</button>
-                    <button>SUBSCRIBE</button>
+                <div className="buttons p-2">
+                    <button>تفاصيل اكثر</button>
+                    {/*<button>حجز</button>*/}
                 </div>
 
             </div>

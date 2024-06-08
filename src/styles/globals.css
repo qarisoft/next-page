@@ -51,16 +51,16 @@
   /*letter-spacing: 10px;*/
 }
 .title{
-  font-size: 2rem;
-  font-weight: bold;
+  /*font-size: 2rem;*/
+  /*font-weight: bold;*/
   color: #b79d41;
-  line-height: 0;
+  /*line-height: 0;*/
 }
-.topic{
-  font-size: 4rem;
-  font-weight: bold;
-  /*line-height: 1.3em;*/
-}
+/*.topic{*/
+/*  font-size: 4rem;*/
+/*  font-weight: bold;*/
+/*  line-height: 1.3em;*/
+/*}*/
 .topic{
   color: #d7d7d7;
   /*color: #f1683a;*/
@@ -75,8 +75,8 @@
 .content .buttons button{
   border: none;
   background-color: #eee;
-  letter-spacing: 3px;
-  font-family: Poppins, serif;
+  /*letter-spacing: 3px;*/
+  /*font-family: Poppins, serif;*/
   font-weight: 500;
 }
 .content .buttons button:nth-child(2){
@@ -112,7 +112,11 @@
     display: none;
   }
 }
-
+.slide{
+  /*background-position: center;*/
+  background-size: cover;
+  /*background-attachment: ;*/
+}
 
 
 

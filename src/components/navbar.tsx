@@ -1,6 +1,8 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure, RadioGroup, Radio} from "@nextui-org/react";
+
 import {
     Navbar as NextUINavbar,
     NavbarContent,
@@ -29,10 +31,12 @@ import {
     Logo,
 } from "@/components/icons";
 import { useRouter } from "next/navigation";
+import React from "react";
+// import {useDisclosure} from "@nextui-org/react";
 
 export const Navbar = () => {
-
-
+    const {isOpen, onOpen, onOpenChange} = useDisclosure();
+    const [modalPlacement, setModalPlacement] = React.useState("auto");
     const searchInput = (
         <Input
             aria-label="Search"
@@ -105,18 +109,20 @@ export const Navbar = () => {
                 justify="end"
             >
                 <NavbarItem className="hidden sm:flex gap-2">
-                    <Link isExternal aria-label="Twitter" href={'#'}>
-                        <TwitterIcon className="text-default-500" />
-                    </Link>
-                    <Link isExternal aria-label="Discord" href={'#'}>
-                        <DiscordIcon className="text-default-500" />
-                    </Link>
-                    <Link isExternal aria-label="Github" href={'#'}>
-                        <GithubIcon className="text-default-500" />
-                    </Link>
-                    {/*<ThemeSwitch />*/}
+                    <div className="hover:cursor-pointer" onClick={onOpen}>
+
+                        <TwitterIcon className="text-default-500" onClick={onOpen}/>
+                    </div>
+
+                    <div className="hover:cursor-pointer" onClick={onOpen}>
+
+                        <DiscordIcon className="text-default-500" onClick={onOpen}/>
+                    </div>
+                    <div className="hover:cursor-pointer" onClick={onOpen}>
+                        <GithubIcon className="text-default-500" onClick={onOpen}/>
+                    </div>
+
                 </NavbarItem>
-                {/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
 
             </NavbarContent>
 
@@ -145,15 +151,59 @@ export const Navbar = () => {
                 </div>
                 <NavbarMenuItem className='flex justify-center gap-2 pt-4 border-t'>
 
-                    <GithubIcon className="text-default-500" />
-                    <TwitterIcon className="text-default-500" />
-                    <DiscordIcon className="text-default-500" />
+                    <div className="hover:cursor-pointer" onClick={onOpen}>
+
+                        <TwitterIcon className="text-default-500" onClick={onOpen}/>
+                    </div>
+
+                    <div className="hover:cursor-pointer" onClick={onOpen}>
+
+                        <DiscordIcon className="text-default-500" onClick={onOpen}/>
+                    </div>
+                    <div className="hover:cursor-pointer" onClick={onOpen}>
+                        <GithubIcon className="text-default-500" onClick={onOpen}/>
+                    </div>
+
                     <div className="w-3"></div>
                     {/* <Link isExternal aria-label="Github" href={'#'}> */}
                     {/* </Link> */}
                     {/*<ThemeSwitch />*/}
                 </NavbarMenuItem>
             </NavbarMenu>
+            <Modal
+                style={{direction:'rtl'}}
+                className=''
+
+
+                isOpen={isOpen}
+                placement='center'
+                onOpenChange={onOpenChange}
+            >
+                <ModalContent>
+                    {(onClose) => (
+                        <>
+                            <ModalHeader className="flex flex-col gap-1 mx-2 ">Welcome</ModalHeader>
+                            <ModalBody>
+                                <p>
+                                    هلا بك
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </ModalBody>
+                            <ModalFooter className={'flex justify-start'}>
+                                <Button color="primary" onPress={onClose}>
+                                    جيد
+                                </Button>
+                                <Button color="danger" variant="light" onPress={onClose}>
+                                    اغلاق
+                                </Button>
+                            </ModalFooter>
+                        </>
+                    )}
+                </ModalContent>
+            </Modal>
         </NextUINavbar>
+
     );
 };

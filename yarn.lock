@@ -750,7 +750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nextui-org/modal@npm:2.0.35":
+"@nextui-org/modal@npm:2.0.35, @nextui-org/modal@npm:^2.0.35":
   version: 2.0.35
   resolution: "@nextui-org/modal@npm:2.0.35"
   dependencies:
@@ -4526,6 +4526,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "next-page@workspace:."
   dependencies:
+    "@nextui-org/modal": "npm:^2.0.35"
     "@nextui-org/navbar": "npm:^2.0.32"
     "@nextui-org/react": "npm:^2.4.1"
     "@types/node": "npm:^20"
