@@ -96,12 +96,12 @@ interface Props {
 
 function Item({className,index}: Props) {
     return (
-        <div className={`absolute slide-con h-full p-2  md:right-[20%] mt-20 w-full md:max-w-2xl   flex flex-col z-20  ${className}`}>
+        <div className={`absolute slide-con h-full p-2  md:right-[20%] mt-20 w-[80%] translate-x-[-10%] md:max-w-2xl   flex flex-col z-20  ${className}`}>
             <div className="flex-1"></div>
             <div className={`content  `}>
 
-                <h1  className="title text-2xl font-bold ">احدث مشاريعنا</h1>
-                <h1 className="topic text-4xl font-bold">
+                <h1  className="title text-4xl font-bold ">احدث مشاريعنا</h1>
+                <h1 className="topic text-6xl md:text-8xl font-bold mb-5">
 
                     مشروع فيلا
 
@@ -110,7 +110,7 @@ function Item({className,index}: Props) {
                 </h1>
                 {/*<div className="topic">ANIMAL</div>*/}
 
-                <div className="des text-white">
+                <div className="des text-white ">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
                     minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda
                     laudantium?

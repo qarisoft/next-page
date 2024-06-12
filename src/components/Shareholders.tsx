@@ -18,27 +18,18 @@ export const Shareholders = () => {
         <>
             <Swiper
                 className={ ' w-[90%] md:w-[80%]  m-3'}
-                // spaceBetween={5}
-                // centeredSlides={true}
 
                 breakpoints={{
-
                     '@0.75': {
-                        // width: 576,
                         spaceBetween:20,
                         slidesPerView: 1,
                     },
                     '@1.00': {
-                        // width: 768,
                         slidesPerView: 2,
                     },
-
                     '@1.5': {
                         slidesPerView: 4,
-
                     },
-
-
                 }}
                 // slidesPerView={1}
 
