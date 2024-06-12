@@ -48,8 +48,8 @@ export default function RootLayout({
                       {children}
                   </main>
                   <footer className={'flex-1 pt-5'}>
-                      <div className="flex justify-between md:max-w-7xl mx-auto pb-3">
-                          <div className="flex flex-col gap-1 text-large">
+                      <div className="md:flex justify-between md:max-w-7xl mx-auto pb-3">
+                          <div className="hidden md:flex flex-col gap-1 text-large">
                               <h1 className="font-extrabold">روابط هامة</h1>
                               <div className="font-medium">الرئيسية</div>
                               <div className="font-medium">عن الشركة</div>
@@ -60,7 +60,8 @@ export default function RootLayout({
                               <div className="font-medium">سياسة الخصوصية</div>
                               <div className="">..............</div>
                           </div>
-                          <div className="b  flex flex-col justify-center gap-4 md:px-10">
+
+                          <div className="b  flex flex-col justify-center gap-4 p-2 md:px-10">
                               <div className=" flex justify-center">
 
                                  <Image
@@ -99,7 +100,10 @@ export default function RootLayout({
 
                           </div>
                       </div>
-                      <div className="bg-mprimary text-white text-center p-2 py-4 ">جميع الحقوق محفوظة © 2024 - شركة عبر العمران للتطوير والاستثمار العقاري</div>
+
+
+
+                      <div className="bg-mprimary text-white text-center p-2 py-4 ">جميع الحقوق محفوظة © 2024 - شركة منازل العمران للتطوير والاستثمار العقاري</div>
                   </footer>
               </div>
               {/*<footer className="w-full flex items-center justify-center py-3">*/}

@@ -19,7 +19,27 @@ export const Shareholders = () => {
             <Swiper
                 className={'md:w-[80%]'}
                 spaceBetween={5}
-                slidesPerView={5}
+                breakpoints={{
+
+                    '@0.75': {
+                        // width: 576,
+                        spaceBetween:20,
+                        slidesPerView: 1,
+                    },
+                    '@1.00': {
+                        // width: 768,
+                        slidesPerView: 2,
+                    },
+
+                    '@1.5': {
+                        slidesPerView: 5,
+
+                    },
+
+
+                }}
+                // slidesPerView={1}
+
                 autoplay={{
                     delay: 3000
                 }}

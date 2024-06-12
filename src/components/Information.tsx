@@ -36,8 +36,8 @@ export const Information = () => {
                 </div>
 
 
-                <div className="imgs  md:flex  gap-3 justify-self-center md:p-6">
-                    <div className="flex flex-col gap-3">
+                <div className="imgs   flex flex-col   md:flex-row  gap-3 justify-self-center md:p-6">
+                    <div className="flex flex-col gap-3 mx-auto">
 
                         <Card className="w-60  "  radius={'none'}>
                             <Skeleton className="">
@@ -52,7 +52,7 @@ export const Information = () => {
                     </div>
 
 
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 mx-auto ">
 
                         <Card className="w-72 " radius={'sm'} >
                             <Skeleton className="rounded-sm">
