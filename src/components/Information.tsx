@@ -41,98 +41,90 @@ export const Information = () => {
                 </div>
 
 
-                <div className="imgs   flex    md:flex-row  gap-3 justify-self-center md:p-6 w-full overflow-hidden ">
+                <div className="imgs   flex    md:flex-row  gap-3 justify-self-center md:p-6 w-full  ">
 
-                    <Swiper
-                        modules={[Grid]}
-                        className={'h-full hidden md:block'}
-                        breakpoints={{
-                            '@0.75': {
-                                spaceBetween:20,
-                                slidesPerView: 1,
-                            },
-                            '@1.00': {
-                                slidesPerView: 2,
-                            },
-                            '@1.5': {
-                                slidesPerView: 2,
-                                spaceBetween:0,
-                            },
-                        }}
-                    grid={{rows:2,  fill:"row"}}
-                    >
-                        <SwiperSlide>
-                            <Card className="w-60  "  radius={'none'}>
+
+                    <div className="hidden md:flex md:gap-2">
+                        <div className="">
+
+                            <Card className="w-60  " radius={'none'}>
                                 <Skeleton className="">
                                     <div className="h-28 rounded-sm bg-default-300"></div>
                                 </Skeleton>
                             </Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card className="w-60  "  radius={'none'}>
+                            <div className="h-5"></div>
+                            <Card className="w-60  " radius={'none'}>
                                 <Skeleton className="">
                                     <div className="h-28 rounded-sm bg-default-300"></div>
                                 </Skeleton>
                             </Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card className="w-60  "  radius={'none'}>
+                            <div className="h-5"></div>
+                        </div>
+
+                        <div className="">
+
+                            <Card className="w-60  " radius={'none'}>
                                 <Skeleton className="">
                                     <div className="h-28 rounded-sm bg-default-300"></div>
                                 </Skeleton>
                             </Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card className="w-60  "  radius={'none'}>
+                            <div className="h-5"></div>
+                            <Card className="w-60  " radius={'none'}>
                                 <Skeleton className="">
                                     <div className="h-28 rounded-sm bg-default-300"></div>
                                 </Skeleton>
                             </Card>
-                        </SwiperSlide>
-
-                    </Swiper>
-
+                        </div>
+                    </div>
 
 
 
-                    <Swiper
-                        className={'h-full  md:hidden'}
-                        breakpoints={{
-                            '@0.75': {
-                                slidesPerView: 1,
-                            },
-                        }}
-                    >
-                        <SwiperSlide>
-                            <Card className="w-[90%] mx-auto "  radius={'none'}>
-                                <Skeleton className="">
-                                    <div className="h-36 rounded-sm bg-default-300"></div>
-                                </Skeleton>
-                            </Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card className="w-[90%] mx-auto "  radius={'none'}>
-                                <Skeleton className="">
-                                    <div className="h-36 rounded-sm bg-default-300"></div>
-                                </Skeleton>
-                            </Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card className="w-[90%] mx-auto "  radius={'none'}>
-                                <Skeleton className="">
-                                    <div className="h-36 rounded-sm bg-default-300"></div>
-                                </Skeleton>
-                            </Card>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card className="w-[90%] mx-auto "  radius={'none'}>
-                                <Skeleton className="">
-                                    <div className="h-36 rounded-sm bg-default-300"></div>
-                                </Skeleton>
-                            </Card>
-                        </SwiperSlide>
 
-                    </Swiper>
+                    <div className="md:hidden">
+
+                        <Swiper
+                            className={'h-full flex-1 m-2 md:hidden'}
+                            breakpoints={{
+                                '@0.75': {
+                                    slidesPerView: 1,
+                                },
+                                '@1': {
+                                    slidesPerView: 1,
+                                },
+                            }}
+                        >
+                            <SwiperSlide>
+                                <Card className="w-[90%] mx-auto "  radius={'none'}>
+                                    <Skeleton className="">
+                                        <div className="h-36 rounded-sm bg-default-300"></div>
+                                    </Skeleton>
+                                </Card>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Card className="w-[90%] mx-auto "  radius={'none'}>
+                                    <Skeleton className="">
+                                        <div className="h-36 rounded-sm bg-default-300"></div>
+                                    </Skeleton>
+                                </Card>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Card className="w-[90%] mx-auto "  radius={'none'}>
+                                    <Skeleton className="">
+                                        <div className="h-36 rounded-sm bg-default-300"></div>
+                                    </Skeleton>
+                                </Card>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Card className="w-[90%] mx-auto "  radius={'none'}>
+                                    <Skeleton className="">
+                                        <div className="h-36 rounded-sm bg-default-300"></div>
+                                    </Skeleton>
+                                </Card>
+                            </SwiperSlide>
+
+                        </Swiper>
+                    </div>
+
                 </div>
             </div>
 
