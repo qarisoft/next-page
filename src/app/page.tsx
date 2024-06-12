@@ -2,6 +2,9 @@
 
 import Image from "next/image";
 import {useEffect, useState} from "react";
+import {Service} from "@/components/Service";
+import {Information} from "@/components/Information";
+import {Shareholders} from "@/components/Shareholders";
 
 export default function Home() {
 
@@ -69,8 +72,16 @@ export default function Home() {
 
 
         </div>
+
+        <Information/>
+        <div className="">
+
+            <Service></Service>
+        </div>
+        <Shareholders/>
             
-            <div className="h-screen"></div>
+            <div className="h-28"></div>
+
         </>
             
     );

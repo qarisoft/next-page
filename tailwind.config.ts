@@ -13,6 +13,9 @@ const config: Config = {
   theme: {
     extend: {
 
+      colors:{
+        mprimary:'#003358',
+      },
       fontFamily: {
         sans: ["Tajawal"],
       },
