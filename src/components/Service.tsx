@@ -3,20 +3,25 @@ import Link from "next/link"
 export const Service = () => {
     return (
         <>
-            <div className="w-full flex justify-center relative"
+            <div className="w-full flex justify-center relative pb-2"
                  style={{backgroundImage: `url('./image/11.jpg')`, backgroundAttachment: 'fixed'}}>
                 <div className="bg-mprimary w-full h-full absolute  opacity-75"></div>
                 <div className="  flex flex-col gap-2 m-4">
-                    <div className=" md:flex md:gap-2 ">
+                    <div className=" flex flex-col md:flex-row gap-2 ">
                         <ServiceItem/>
-                        <ServiceItem/>
-                    </div>
-                    <div className="md:flex md:gap-2">
-                        <ServiceItem/>
+                        <div className="h-4"></div>
                         <ServiceItem/>
                     </div>
+                    <div className="h-4"></div>
+                    <div className=" flex flex-col md:flex-row gap-2">
+                        <ServiceItem/>
+                        <div className="h-4"></div>
+                        <ServiceItem/>
+                    </div>
+                    <div className="h-4"></div>
                     <ServiceItem/>
                 </div>
+            <div className="h-4"></div>
             </div>
         </>
     );
@@ -48,18 +53,6 @@ const ServiceItem = () => {
                     </div>
                 </div>
             </div>
-            {/*<div className="card0 rounded flex  w-[500px]  h-64 bg-amber-300">*/}
-            {/*    <div className=" flex   justify-center  m-auto">*/}
-            {/*        <div className="back">*/}
-
-            {/*        </div>*/}
-            {/*        <div className="text-center  front">*/}
-
-            {/*                <span className="icon icon-healthcare font-medium"></span>*/}
-            {/*                <h1 className={'font-bold text-2xl'}>استثمار الاراضي</h1>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </div>
     );
 };
