@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 import {Service} from "@/components/Service";
 import {Information} from "@/components/Information";
 import {Shareholders} from "@/components/Shareholders";
+import {Achements} from "@/components/Achements";
 
 export default function Home() {
 
@@ -78,9 +79,10 @@ export default function Home() {
 
             <Service></Service>
         </div>
+            <Achements/>
         <Shareholders/>
             
-            <div className="h-28"></div>
+            {/*<div className="h-28"></div>*/}
 
         </>
             

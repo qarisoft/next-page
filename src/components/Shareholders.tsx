@@ -17,8 +17,10 @@ export const Shareholders = () => {
     return (
         <>
             <Swiper
-                className={'md:w-[80%]'}
-                spaceBetween={5}
+                className={ ' w-[90%] md:w-[80%]  m-3'}
+                // spaceBetween={5}
+                // centeredSlides={true}
+
                 breakpoints={{
 
                     '@0.75': {
@@ -32,7 +34,7 @@ export const Shareholders = () => {
                     },
 
                     '@1.5': {
-                        slidesPerView: 5,
+                        slidesPerView: 4,
 
                     },
 
@@ -41,7 +43,7 @@ export const Shareholders = () => {
                 // slidesPerView={1}
 
                 autoplay={{
-                    delay: 3000
+                    delay: 4000
                 }}
                 modules={[Autoplay]}
                 onSlideChange={() => console.log('slide change')}
@@ -49,7 +51,7 @@ export const Shareholders = () => {
             >
                 {
                     data.map((item, index) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide key={index} className={''}>
                             <SlideItem/>
                         </SwiperSlide>
                     ))
@@ -64,7 +66,7 @@ export const Shareholders = () => {
 
 const SlideItem = ()=>{
     return (
-        <Card className="w-[200px] space-y-5 p-4" radius="lg">
+        <Card className="w-[90%] mx-auto space-y-5 p-4" radius="lg">
             <Skeleton className="rounded-lg">
                 <div className="h-24 rounded-lg bg-default-300"></div>
             </Skeleton>

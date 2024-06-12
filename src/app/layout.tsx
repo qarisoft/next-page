@@ -47,9 +47,9 @@ export default function RootLayout({
                   <main className=" ">
                       {children}
                   </main>
-                  <footer className={'flex-1 pt-5'}>
+                  <footer className={'flex-1 pt-5 border-t'}>
                       <div className="md:flex justify-between md:max-w-7xl mx-auto pb-3">
-                          <div className="hidden md:flex flex-col gap-1 text-large">
+                          <div className=" md:flex flex-col   text-center md:text-start gap-1 text-large">
                               <h1 className="font-extrabold">روابط هامة</h1>
                               <div className="font-medium">الرئيسية</div>
                               <div className="font-medium">عن الشركة</div>
