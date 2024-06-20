@@ -1,7 +1,6 @@
 import {Skeleton} from "@nextui-org/skeleton";
 import {Card} from "@nextui-org/card";
 import { Swiper, SwiperSlide,} from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Grid } from 'swiper/modules';
 import 'swiper/css';
 import  'swiper/css/grid';
 import {Autoplay} from "swiper/modules";
@@ -11,7 +10,7 @@ export const Information = () => {
             <div className="md:flex justify-around  p-4 ">
                 <div className="text max-w-2xl md:p-6   ">
                     <h1 className='font-bold text-2xl m-3'>
-                        عبر العمران للتطوير والاستثمار العقاري
+                        منازل العمران للتطوير والاستثمار العقاري
                     </h1>
                     <p className='font-medium leading-loose ps-4'>
                         لم تكن مسيرة شركة عبر العمران للتطوير والاستثمـار العقاري وليدة لحظة التــأسيس، بل هي ممتـدة
@@ -84,6 +83,7 @@ export const Information = () => {
 
                         <Swiper
                             className={'h-full flex-1 m-2 md:hidden'}
+                            modules={[Autoplay]}
                             breakpoints={{
                                 '@0.75': {
                                     slidesPerView: 1,

@@ -1,14 +1,10 @@
 import type {Metadata, Viewport} from "next";
-import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import {Providers} from "@/app/providers";
 import {siteConfig} from "@/config/site";
 import {Image} from "@nextui-org/image";
-// import {Navbar} from "@nextui-org/react";
 import React from "react";
 import {Navbar} from "@/components/navbar";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -18,7 +14,7 @@ export const metadata: Metadata = {
 
     description: siteConfig.description,
     icons: {
-        icon: "/favicon.ico",
+        icon: "favicon.ico",
     },
 };
 
@@ -33,14 +29,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html suppressHydrationWarning lang="ar" dir="rtl" >
-      <body className={`${inter.className} "min-h-screen bg-background font-sans antialiased"`}>
+      <body className={`${'inter.className'} "min-h-screen bg-background font-sans antialiased"`}>
 
       <Providers
       >
 
-          {/*<div className=" ">*/}
 
               <div className="relative flex flex-col  ">
                   <Navbar/>
@@ -106,13 +102,9 @@ export default function RootLayout({
                       <div className="bg-mprimary text-white text-center p-2 py-4 ">جميع الحقوق محفوظة © 2024 - شركة منازل العمران للتطوير والاستثمار العقاري</div>
                   </footer>
               </div>
-              {/*<footer className="w-full flex items-center justify-center py-3">*/}
-
-              {/*</footer>*/}
-          {/*</div>*/}
       </Providers>
 
-
+      <script src='a.js'></script>
       </body>
 
     </html>

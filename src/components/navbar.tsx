@@ -19,20 +19,14 @@ import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
-// import Logo from '/logo.pejg'
 import { siteConfig } from "@/config/site";
-// import { ThemeSwitch } from "@/components/theme-switch";
 import {
     TwitterIcon,
     GithubIcon,
     DiscordIcon,
-    HeartFilledIcon,
     SearchIcon,
-    Logo,
 } from "@/components/icons";
-import { useRouter } from "next/navigation";
 import React from "react";
-// import {useDisclosure} from "@nextui-org/react";
 
 export const Navbar = () => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
