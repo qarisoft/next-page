@@ -25,7 +25,7 @@ export const Hero = ({images}:HeroProps)=>{
                     setII(activeI);
                     setImage(i=>i >=  images.length -1   ? 0 : i+1);
                     return;
-            },4000)
+            },6000)
         }
     }, [activeI]);
 
