@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
     description: siteConfig.description,
     icons: {
-        icon: "favicon.ico",
+        icon: "./favicon.ico",
     },
 };
 
@@ -36,8 +36,6 @@ export default function RootLayout({
 
       <Providers
       >
-
-
               <div className="relative flex flex-col  ">
                   <Navbar/>
                   <main className=" ">

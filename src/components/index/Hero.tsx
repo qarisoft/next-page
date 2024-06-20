@@ -101,6 +101,5 @@ function Item({className, c, data, n}: Props) {
                 </div>
 
             </div>
-        // </div>
     );
 }
