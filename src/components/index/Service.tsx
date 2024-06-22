@@ -48,8 +48,6 @@ const ServiceItem = ({title, description, data,icon}:ServiceProps) => {
                                 icon &&
                             <img src={icon} className={'h-28 w-28 mx-auto'} />
                             }
-                            {/*<svg ></svg>*/}
-                            {/*<span className="icon icon-healthcare font-medium"></span>*/}
                             <h1 className={'font-bold text-2xl'}>{title}</h1>
                         </div>
                     </div>
