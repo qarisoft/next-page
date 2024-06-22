@@ -1,17 +1,15 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Card, Skeleton} from "@nextui-org/react";
 import 'swiper/css';
-import {Autoplay} from "swiper/modules";
+
+import {Autoplay,Navigation,Pagination} from "swiper/modules";
 export const Shareholders = () => {
     const data=[
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,9,10,11,12
+        './image/show/show1.jpeg',
+        './image/show/show2.jpeg',
+        './image/show/show3.jpeg',
+        './image/show/show4.jpeg',
+
     ]
 
     return (
@@ -36,14 +34,14 @@ export const Shareholders = () => {
                 autoplay={{
                     delay: 4000
                 }}
-                modules={[Autoplay]}
+                modules={[Autoplay,Navigation,Pagination]}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
                 {
                     data.map((item, index) => (
                         <SwiperSlide key={index} className={''}>
-                            <SlideItem/>
+                            <img src={item}/>
                         </SwiperSlide>
                     ))
                 }

@@ -7,9 +7,9 @@ interface IntroProps {
 export const Intro = ({title,description,data}:IntroProps) => {
     return (
         <>
-            <div className="bg-amber- w-full ">
+            <div className="bg-amber-  p-1 m-2 me-0 border shadow ">
                 <div className="text max-w-2xl md:p-6   ">
-                    <h1 className='font-bold text-2xl m-3 bg-[#f7942e] w-fit rounded-e-2xl p-1 pe-9'>
+                    <h1 className='font-bold text-2xl mb-2 -ms-1 bg-[#f7942e] w-fit rounded-e-2xl p-1 pe-9'>
                         {title}
                     </h1>
                     {
