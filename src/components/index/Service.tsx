@@ -40,9 +40,9 @@ const ServiceItem = ({title, description, data,icon}:ServiceProps) => {
     // @ts-ignore
     return (
         <div className='war overflow-hidden'>
-            <div className="flip-card  h-64 sm:w-[300px] md:w-[500px] flex m-auto ">
-                <div className="flip-card-inner ">
-                    <div className="flip-card-front flex justify-center bg-white">
+            <div className="flip-card  h-64 sm:w-[300px] md:w-[500px] flex m-auto " >
+                <div className="flip-card-inner  ">
+                    <div className="flip-card-front flex justify-center bg-white bg-cover bg-repeat-round" style={{ backgroundImage:"url('./image/back2.png')", }}>
                         <div className="m-auto p-auto flex flex-col gap-2 b">
                             {
                                 icon &&

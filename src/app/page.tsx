@@ -1,8 +1,8 @@
 "use client"
 
-import Image from "next/image";
+// import Image from "next/image";
 import {Service} from "@/components/index/Service";
-import {Information} from "@/components/Information";
+// import {Information} from "@/components/Information";
 import {Shareholders} from "@/components/Shareholders";
 import {Achements} from "@/components/Achements";
 import {Hero} from "@/components/index/Hero";
@@ -80,18 +80,18 @@ export default function Home( ) {
 
         <Hero images={images} />
 
-            <div className="pe-2">
+        <div className="pe-2 " style={{ backgroundImage:"url('./images/hero/hero7.jpeg')"}}>
 
             <Intro title={'من نحن؟'}   description={siteConfig.intro}/>
             <Intro title={'رؤيتنا'}   description={siteConfig.vision}/>
             <Intro title={'الأهداف'}   data={siteConfig.goals}/>
             <Intro title={'القيم و المبادئ'}   data={siteConfig.morals}/>
-            </div>
+        </div>
 
 
 
-            <Power title={'لماذا القوة العقارية ؟'}/>
-            <Service title={'خدماتنا'}/>
+        <Power title={'لماذا القوة العقارية ؟'}/>
+        <Service title={'خدماتنا'}/>
         <Achements/>
         <Shareholders/>
         </>
