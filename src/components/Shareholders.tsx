@@ -1,8 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Card, Skeleton} from "@nextui-org/react";
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-import {Autoplay,Navigation,Pagination} from "swiper/modules";
+import {A11y, Autoplay, Navigation, Pagination, Scrollbar} from "swiper/modules";
 export const Shareholders = () => {
     const data=[
         './image/show/show1.jpeg',
@@ -16,7 +19,8 @@ export const Shareholders = () => {
         <>
             <Swiper
                 className={ ' w-[90%] md:w-[80%]  m-3'}
-
+                watchSlidesProgress
+                // onKeyPress={swiper => swiper.pus}
                 breakpoints={{
                     '@0.75': {
                         spaceBetween:20,
@@ -34,14 +38,24 @@ export const Shareholders = () => {
                 autoplay={{
                     delay: 4000
                 }}
-                modules={[Autoplay,Navigation,Pagination]}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                navigation
+                pagination={{clickable:true}}
+                scrollbar
+                modules={[Autoplay,Navigation,Pagination,A11y,Scrollbar]}
+                onTouchStart={(swiper) => swiper.autoplay.pause()}
+                onTouchEnd={(swiper) => swiper.autoplay.resume()}
+                // onHover={(swiper) => swiper.autoplay.pause()}
+                loop
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
             >
                 {
                     data.map((item, index) => (
                         <SwiperSlide key={index} className={''}>
-                            <img src={item}/>
+                            <div className="w-full h-full ">
+
+                                <img src={item}/>
+                            </div>
                         </SwiperSlide>
                     ))
                 }
