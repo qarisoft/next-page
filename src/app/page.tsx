@@ -9,6 +9,7 @@ import {Hero} from "@/components/index/Hero";
 import {siteConfig} from "@/config/site";
 import {useEffect, useState} from "react";
 import {Intro} from "@/components/index/Intro";
+import {Power} from "@/components/index/Power";
 const getData = async () => {
     const res = await fetch(`${siteConfig.links.backend}/home`)
     if (!res.ok) {
@@ -68,7 +69,8 @@ export default function Home( ) {
 
 
 
-        <Service title={'خدماتنا'}/>
+            {/*<Power title={'خدماتنا'}/>*/}
+            <Power title={'لماذا القوة العقارية ؟'}/>
         <Achements/>
         <Shareholders/>
         </>
