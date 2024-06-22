@@ -17,7 +17,9 @@ export const Service = ({title,description,data}:ServiceProps) => {
 
                     <div className={'text-white  font-bold text-2xl m-3 relative z-20'}>{title}</div>
 
-                    <div className="h-4"></div>
+                    <div className="h-4 "></div>
+                    <div className="grid md:grid-cols-2 ">
+
                     {
                         siteConfig.serviceList.map((value, index) => (
                             <div key={index} className={'mb-2'}>
@@ -27,6 +29,7 @@ export const Service = ({title,description,data}:ServiceProps) => {
                             </div>
                         ))
                     }
+                    </div>
 
                 </div>
             </div>

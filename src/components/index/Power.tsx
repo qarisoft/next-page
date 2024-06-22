@@ -10,22 +10,18 @@ export const Power = ({title,description,data}:PowerProps) => {
         <>
             <div className="text-center bg-gray-100 relative pt-3"
             >
-                    <div className="    bg-mprimar md:grid md:grid-cols-2 md:gap-2 justify-center">
-                    <div className={'textwhite  font-bold text-2xl   my-3'}>{title}</div>
+                    <div className="    bg-mprimar  justify-center">
+                    <div className={'textwhite  font-bold text-2xl mx-auto   my-3'}>{title}</div>
                         <div className="h-5"></div>
                             <div className=" flex  w-screen overflow-auto pb-2">
-
-                        {/*<Swiper>*/}
-
-
                             {
                                 siteConfig.power.map((value, index) => (
 
-                                    <div key={index} className={'min-w-[97vw]  px-[3vw] mx-[3vw] flex-1   shadow rounded '}>
+                                    <div key={index} className={ ' min-w-[95vw]  px-[5vw] m-[3vw] md:px-[3vw] md:mx-[1vw] md:min-w-[37vw] flex-1   shadow rounded '}>
                                         <h1 className={'font-semibold text-xl '}>{value.title}</h1>
                                         <div className="h-0.5 bg-mprimary w-full my-2"></div>
 
-                                        <p className={''}>{value.description}</p>
+                                        <p className={'pb-2'}>{value.description}</p>
                                     </div>
                                 ))
                             }
