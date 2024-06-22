@@ -71,7 +71,7 @@ export default function RootLayout({
                                         <div className="h-[3px] bg-[#c19455] mx-2"></div>
                                         <div className="font-[600] pt-1">
 
-                                            <h1>ABR ALOMRAN FOR DEVELOPMENT AND REAL ESTATE</h1>
+                                            <h1>MANAZEL ALOMRAN FOR DEVELOPMENT AND REAL ESTATE</h1>
                                             <h1>INVESTMENT COMPANY</h1>
 
                                         </div>

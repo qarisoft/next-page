@@ -20,7 +20,6 @@ export const Shareholders = () => {
             <Swiper
                 className={ ' w-[90%] md:w-[80%]  m-3'}
                 watchSlidesProgress
-                // onKeyPress={swiper => swiper.pus}
                 breakpoints={{
                     '@0.75': {
                         spaceBetween:20,
@@ -44,10 +43,7 @@ export const Shareholders = () => {
                 modules={[Autoplay,Navigation,Pagination,A11y,Scrollbar]}
                 onTouchStart={(swiper) => swiper.autoplay.pause()}
                 onTouchEnd={(swiper) => swiper.autoplay.resume()}
-                // onHover={(swiper) => swiper.autoplay.pause()}
                 loop
-                // onSlideChange={() => console.log('slide change')}
-                // onSwiper={(swiper) => console.log(swiper)}
             >
                 {
                     data.map((item, index) => (
