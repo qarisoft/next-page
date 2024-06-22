@@ -1,13 +1,32 @@
 "use client"
 
 import Image from "next/image";
-import {Service} from "@/components/Service";
+import {Service} from "@/components/index/Service";
 import {Information} from "@/components/Information";
 import {Shareholders} from "@/components/Shareholders";
 import {Achements} from "@/components/Achements";
 import {Hero} from "@/components/index/Hero";
+import {siteConfig} from "@/config/site";
+import {useEffect, useState} from "react";
+import {Intro} from "@/components/index/Intro";
+const getData = async () => {
+    const res = await fetch(`${siteConfig.links.backend}/home`)
+    if (!res.ok) {
+        throw new Error('Failed to fetch data')
+    }
+        return await res.json()
+}
 
-export default function Home() {
+export default function Home( ) {
+    const [data, setData] = useState([]);
+    // useEffect(() => {
+    //     if (data.length==0){
+    //         getData().then((a)=>{
+    //             setData(a)
+    //             console.log(a)
+    //         })
+    //     }
+    // }, [data]);
 
     const images = [
         {
@@ -38,16 +57,20 @@ export default function Home() {
         <>
 
         <Hero images={images} />
-        <Information/>
-        <div className="">
 
-            <Service></Service>
-        </div>
-            <Achements/>
+            <div className="pe-2">
+
+            <Intro title={'من نحن؟'}   description={siteConfig.intro}/>
+            <Intro title={'رؤيتنا'}   description={siteConfig.vision}/>
+            <Intro title={'الأهداف'}   data={siteConfig.goals}/>
+            <Intro title={'القيم و المبادئ'}   data={siteConfig.morals}/>
+            </div>
+
+
+
+        <Service title={'خدماتنا'}/>
+        <Achements/>
         <Shareholders/>
-            
-            {/*<div className="h-28"></div>*/}
-
         </>
             
     );

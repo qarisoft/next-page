@@ -15,6 +15,7 @@ const config: Config = {
 
       colors:{
         mprimary:'#003358',
+        yel:'#f7942e'
       },
       fontFamily: {
         sans: ["Tajawal"],
