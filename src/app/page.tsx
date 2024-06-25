@@ -54,13 +54,16 @@ export default function Home( ) {
 
                     modules={[Autoplay,Navigation,Pagination,Scrollbar,A11y]}
                     pagination
-                    scrollbar
+                    scrollbar={{
+
+                    }}
+                    loop={true}
                     autoplay={{
                         delay: 5000,
                     }}
 
             slidesPerView={1}>
-                <SwiperSlide className={'my-auto '} >
+                <SwiperSlide className={'my-auto h-full bg-amber- '} >
                     <Intro title={'من نحن؟'}   description={siteConfig.intro}/>
                 </SwiperSlide>
                 <SwiperSlide className={'my-auto'}>
