@@ -38,12 +38,12 @@ export const Hero = ({images}:HeroProps)=>{
             {images.map((i, index) => (
                 <div key={index}>
                     <div
-                        className={`absolute w-full h-full bg-mprimary bg-repeat-round slide-m 
+                        className={`absolute w-full h-full bg-mprimary bg-repeat-roun bg-contain slide-m 
                         ${index == activeI ? '' : 'hidden'} `}
                         style={{backgroundImage: `url(${i.image})`}}>
                     </div>
                     <div
-                        className={`absolute w-full h-full bg-mprimary bg-repeat-round slide-m1  
+                        className={`absolute w-full h-full bg-mprimary bg-repeat-roun slide-m1  
                         ${index == activeII ? ' animate__animated animate__fadeOut ' : 'hidden'}`}
                         style={{backgroundImage: `url(${i.image})`}}>
                     </div>

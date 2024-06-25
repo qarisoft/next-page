@@ -5,47 +5,60 @@ export const siteConfig = {
     description: "Make beautiful websites regardless of your design experience.",
      index : [
         {
-            title:'مشروع فيلا 1',
+
+            title:'الربوة',
             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
                 '                    laudantium?',
-            image:"./image/hero/hero1.jpeg",
+            image:"./image/hero/rapwah1.jpeg",
+
         },
+         {
+             title:'الربوة',
+             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                 '                    laudantium?',
+             image:"./image/hero/rapwah2.jpeg",
+         },
+         {
+             title:'الربوة',
+             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                 '                    laudantium?',
+             image:"./image/hero/rapwah3.jpeg",
+         }
+         ,
         {
-            title:'مشروع فيلا 2',
+            title:'المروة',
             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
                 '                    laudantium?',
-            image:"./image/hero/hero2.jpeg",
-        },
-        {
-            title:'مشروع فيلا 3',
-            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
-                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
-                '                    laudantium?',
-            image:"./image/hero/hero3.jpeg",
-        },
-        {
-            title:'مشروع فيلا 4',
-            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
-                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
-                '                    laudantium?',
-            image:"./image/hero/hero4.jpeg",
-        },
-        {
-            title:'مشروع فيلا 5',
-            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
-                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
-                '                    laudantium?',
-            image:"./image/hero/hero5.jpeg",
-        },
-        {
-            title:'مشروع فيلا 6',
-            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
-                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
-                '                    laudantium?',
-            image:"./image/hero/hero6.jpeg",
-        }
+            image:"./image/hero/marwah1.jpeg",
+        },{
+             title:'المروة',
+             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                 '                    laudantium?',
+             image:"./image/hero/marwah2.jpeg",
+         },{
+             title:'المروة',
+             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                 '                    laudantium?',
+             image:"./image/hero/marwah3.jpeg",
+         },{
+             title:'المروة',
+             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                 '                    laudantium?',
+             image:"./image/hero/marwah4.jpeg",
+         },{
+             title:'المروة',
+             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                 '                    laudantium?',
+             image:"./image/hero/marwah5.jpeg",
+         }
     ],
 
     navItems: [
