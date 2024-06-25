@@ -37,7 +37,6 @@ export const Shareholders = () => {
                 autoplay={{
                     delay: 4000
                 }}
-                navigation
                 pagination={{clickable:true}}
                 scrollbar
                 modules={[Autoplay,Navigation,Pagination,A11y,Scrollbar]}

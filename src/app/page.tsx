@@ -52,10 +52,9 @@ export default function Home( ) {
             <h1 className={'relative z-10 text-center font-semibold py-3 text-xl text-white border-b-1 mx-4'}>عن الشركة</h1>
             <Swiper className={''}
 
-                modules={[Autoplay,Navigation,Pagination,Scrollbar,A11y]}
-                pagination
-                // navigation
-                scrollbar
+                    modules={[Autoplay,Navigation,Pagination,Scrollbar,A11y]}
+                    pagination
+                    scrollbar
                     autoplay={{
                         delay: 5000,
                     }}
