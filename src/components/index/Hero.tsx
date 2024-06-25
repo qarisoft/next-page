@@ -31,7 +31,7 @@ export const Hero = ({images}:HeroProps)=>{
 
 
     return (
-        <div className=" h-screen relative mt-[-4rem] top-0 left-0 w-full">
+        <div className=" h-screen relative mt-[-4rem] top-0 left-0 w-full overflow-hidden">
 
             {/*<div className="bg-amber-300 p-7 absolute top-50  mt-20  left-0 z-50 ">activeI: {activeI} activeII: {activeII}</div>*/}
 

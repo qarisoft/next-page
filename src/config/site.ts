@@ -3,6 +3,51 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
     name: "omranhouses",
     description: "Make beautiful websites regardless of your design experience.",
+     index : [
+        {
+            title:'مشروع فيلا 1',
+            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                '                    laudantium?',
+            image:"./image/hero/hero1.jpeg",
+        },
+        {
+            title:'مشروع فيلا 2',
+            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                '                    laudantium?',
+            image:"./image/hero/hero2.jpeg",
+        },
+        {
+            title:'مشروع فيلا 3',
+            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                '                    laudantium?',
+            image:"./image/hero/hero3.jpeg",
+        },
+        {
+            title:'مشروع فيلا 4',
+            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                '                    laudantium?',
+            image:"./image/hero/hero4.jpeg",
+        },
+        {
+            title:'مشروع فيلا 5',
+            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                '                    laudantium?',
+            image:"./image/hero/hero5.jpeg",
+        },
+        {
+            title:'مشروع فيلا 6',
+            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                '                    laudantium?',
+            image:"./image/hero/hero6.jpeg",
+        }
+    ],
+
     navItems: [
         {
             label: "الرئيسية",
