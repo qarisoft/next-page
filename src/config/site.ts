@@ -13,6 +13,14 @@ export const siteConfig = {
             image:"./image/hero/rapwah1.jpeg",
 
         },
+        {
+            title:'المروة',
+            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                '                    laudantium?',
+            image:"./image/hero/marwah1.jpeg",
+        },
+
          {
              title:'الربوة',
              description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
@@ -21,26 +29,21 @@ export const siteConfig = {
              image:"./image/hero/rapwah2.jpeg",
          },
          {
+             title:'المروة',
+             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
+                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
+                 '                    laudantium?',
+             image:"./image/hero/marwah2.jpeg",
+         },
+
+         {
              title:'الربوة',
              description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
                  '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
                  '                    laudantium?',
              image:"./image/hero/rapwah3.jpeg",
          }
-         ,
-        {
-            title:'المروة',
-            description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
-                '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
-                '                    laudantium?',
-            image:"./image/hero/marwah1.jpeg",
-        },{
-             title:'المروة',
-             description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
-                 '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
-                 '                    laudantium?',
-             image:"./image/hero/marwah2.jpeg",
-         },{
+         ,{
              title:'المروة',
              description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt\n' +
                  '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +

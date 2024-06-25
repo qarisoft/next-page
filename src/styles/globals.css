@@ -5,13 +5,15 @@
 *{
   animation-duration: 1s;
 }
-
+.navbar{
+  opacity: 0 !important;
+}
 .slide-m{
   z-index: 1;
-  object-fit: contain;
-  background-origin: content-box;
-  background-position: center;
-  background-size: contain !important;
+  /*object-fit: contain;*/
+  /*background-origin: content-box;*/
+  /*background-position: center;*/
+  /*background-size: contain !important;*/
   background-repeat: round;
 
 }

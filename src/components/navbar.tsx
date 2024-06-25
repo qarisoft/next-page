@@ -59,6 +59,7 @@ export const Navbar = () => {
             classNames={{
 
                 item: [
+                    "navbar",
                     "flex",
                     "relative",
                     "h-full",

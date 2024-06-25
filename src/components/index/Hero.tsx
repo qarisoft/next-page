@@ -38,17 +38,17 @@ export const Hero = ({images}:HeroProps)=>{
             {images.map((i, index) => (
                 <div key={index}>
                     <div
-                        className={`absolute w-full h-full bg-mprimary bg-repeat-roun bg-contain slide-m 
+                        className={`absolute w-full h-full bg-mprimary bg-repeat-round b-no-repeat bg-contain slide-m 
                         ${index == activeI ? '' : 'hidden'} `}
                         style={{backgroundImage: `url(${i.image})`}}>
                     </div>
                     <div
-                        className={`absolute w-full h-full bg-mprimary bg-repeat-roun slide-m1  
+                        className={`absolute w-full h-full bg-mprimary bg-repeat-round g-no-repeat slide-m1  
                         ${index == activeII ? ' animate__animated animate__fadeOut ' : 'hidden'}`}
                         style={{backgroundImage: `url(${i.image})`}}>
                     </div>
                     
-                    <div className="h-full w-full absolute top-0 left-0 bg-gray-800 opacity-15 overlay-color"></div>
+                    <div className="h-full w-full absolute top-0 left-0 bg-gray-800 opacity-10 overlay-color"></div>
 
 
                     <div className="absolute w-full h-full  flex justify-center items-center slide-c">
