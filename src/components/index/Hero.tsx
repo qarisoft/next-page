@@ -22,7 +22,7 @@ export const Hero = ({images}:HeroProps)=>{
         if (aa==null){
 
             aa = setTimeout(()=>{
-                    setII(activeI);
+                    setII(()=>activeI);
                     setImage(i=>i >=  images.length -1   ? 0 : i+1);
                     return;
             },6000)
@@ -33,17 +33,16 @@ export const Hero = ({images}:HeroProps)=>{
     return (
         <div className=" h-screen relative mt-[-4rem] top-0 left-0 w-full overflow-hidden">
 
-            {/*<div className="bg-amber-300 p-7 absolute top-50  mt-20  left-0 z-50 ">activeI: {activeI} activeII: {activeII}</div>*/}
-
+                <div className="absolute w-full h-full blur"  style={{ backgroundImage:"url('./image/11.jpg')"}}></div>
             {images.map((i, index) => (
                 <div key={index}>
                     <div
-                        className={`absolute w-full h-full bg-mprimary bg-repeat-round b-no-repeat bg-contain slide-m 
+                        className={`absolute w-full h-full bg-mprimar  slide slide-m 
                         ${index == activeI ? '' : 'hidden'} `}
                         style={{backgroundImage: `url(${i.image})`}}>
                     </div>
                     <div
-                        className={`absolute w-full h-full bg-mprimary bg-repeat-round g-no-repeat slide-m1  
+                        className={`absolute w-full h-full bg-mprimar  slide slide-m1  
                         ${index == activeII ? ' animate__animated animate__fadeOut ' : 'hidden'}`}
                         style={{backgroundImage: `url(${i.image})`}}>
                     </div>

@@ -1,9 +1,7 @@
 "use client"
 import { Swiper, SwiperSlide,} from 'swiper/react';
-// import Image from "next/image";
 import {Service} from "@/components/index/Service";
 import {Autoplay,Navigation,Pagination,Scrollbar,A11y,Grid,EffectCards,EffectCube,EffectFlip,EffectFade,EffectCoverflow,EffectCreative} from "swiper/modules";
-// import {Information} from "@/components/Information";
 import {Shareholders} from "@/components/Shareholders";
 import {Achements} from "@/components/Achements";
 import {Hero} from "@/components/index/Hero";
@@ -11,12 +9,6 @@ import {siteConfig} from "@/config/site";
 import {useEffect, useState} from "react";
 import {Intro} from "@/components/index/Intro";
 import {Power} from "@/components/index/Power";
-// import 'swiper/css'
-// import 'swiper/css/navigation';
-// import 'swiper/css/eff';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
-// import 'swiper/css/';
 import 'swiper/css/bundle';
 
 // const getData = async () => {
@@ -54,8 +46,8 @@ export default function Home( ) {
 
             </div>
             <h1 className={'relative z-10 text-center font-semibold py-3 text-xl text-white border-b-1 mx-4'}>عن الشركة</h1>
-            <Swiper className={''}
-
+            <Swiper className={'max-w-2xl mb-6 pb-8'}
+                    translate={'yes'}
                     modules={[
                         EffectCube,
                         Autoplay,
@@ -65,15 +57,7 @@ export default function Home( ) {
                     scrollbar={{
 
                     }}
-                    breakpoints={{
-                        '@0.75': {
-                            slidesPerView: 1,
-                            spaceBetween:10,
-                        },
-                        '@1': {
-                            slidesPerView: 1,
-                        },
-                    }}
+
 
                     effect={'cube'}
                     speed={900}
@@ -84,17 +68,17 @@ export default function Home( ) {
                     }}
 
             slidesPerView={1}>
-                <SwiperSlide className={'my-auto h-full bg-amber- '} >
+                <SwiperSlide  >
 
                     <Intro title={'من نحن؟'}   description={siteConfig.intro}/>
                 </SwiperSlide>
-                <SwiperSlide className={'my-auto'}>
+                <SwiperSlide >
                     <Intro title={'رؤيتنا'}   description={siteConfig.vision}/>
                 </SwiperSlide>
-                <SwiperSlide className={'my-auto'}>
+                <SwiperSlide >
                     <Intro title={'الأهداف'}   data={siteConfig.goals}/>
                 </SwiperSlide>
-                <SwiperSlide className={'my-auto'}>
+                <SwiperSlide >
                     <Intro title={'القيم و المبادئ'}   data={siteConfig.morals}/>
                 </SwiperSlide>
             </Swiper>
