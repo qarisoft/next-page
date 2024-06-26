@@ -1,4 +1,5 @@
-export const Achements = () => {
+export const Achievements = () => {
+    const achievements=''
     return (
         <>
             <div className="flex flex-col  md:flex-row  gap-6     bg-[#F6F6F696]" style={{

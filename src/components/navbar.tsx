@@ -14,11 +14,8 @@ import {
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
-import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
-import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
-import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import {
     TwitterIcon,
@@ -145,19 +142,6 @@ export const Navbar = () => {
                     ))}
                 </div>
                 <NavbarMenuItem className='flex justify-center gap-2 pt-4 border-t'>
-
-                    {/*<div className="hover:cursor-pointer" onClick={onOpen}>*/}
-
-                    {/*    <TwitterIcon className="text-default-500" onClick={onOpen}/>*/}
-                    {/*</div>*/}
-
-                    {/*<div className="hover:cursor-pointer" onClick={onOpen}>*/}
-
-                    {/*    <DiscordIcon className="text-default-500" onClick={onOpen}/>*/}
-                    {/*</div>*/}
-                    {/*<div className="hover:cursor-pointer" onClick={onOpen}>*/}
-                    {/*    <GithubIcon className="text-default-500" onClick={onOpen}/>*/}
-                    {/*</div>*/}
                     <Social/>
                     <div className="w-3"></div>
                 </NavbarMenuItem>

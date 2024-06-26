@@ -36,7 +36,7 @@ export const Shareholders = () => {
                 // slidesPerView={1}
 
                 autoplay={{
-                    delay: 4000
+                    delay: 7000
                 }}
                 pagination={{clickable:true}}
                 scrollbar
@@ -50,7 +50,7 @@ export const Shareholders = () => {
                         <SwiperSlide key={index} className={''}>
                             <div className="w-full h-full ">
 
-                                <img src={item}/>
+                                <img src={item} alt={'image'}/>
                             </div>
                         </SwiperSlide>
                     ))
@@ -63,23 +63,3 @@ export const Shareholders = () => {
 };
 
 
-const SlideItem = ()=>{
-    return (
-        <Card className="w-[90%] mx-auto space-y-5 p-4" radius="lg">
-            <Skeleton className="rounded-lg">
-                <div className="h-24 rounded-lg bg-default-300"></div>
-            </Skeleton>
-            <div className="space-y-3">
-                <Skeleton className="w-3/5 rounded-lg">
-                    <div className="h-3 w-3/5 rounded-lg bg-default-200"></div>
-                </Skeleton>
-                <Skeleton className="w-4/5 rounded-lg">
-                    <div className="h-3 w-4/5 rounded-lg bg-default-200"></div>
-                </Skeleton>
-                <Skeleton className="w-2/5 rounded-lg">
-                    <div className="h-3 w-2/5 rounded-lg bg-default-300"></div>
-                </Skeleton>
-            </div>
-        </Card>
-    );
-}
