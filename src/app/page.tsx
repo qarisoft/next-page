@@ -46,7 +46,7 @@ export default function Home( ) {
 
             </div>
             <h1 className={'relative z-10 text-center font-semibold py-3 text-xl text-white border-b-1 mx-4'}>عن الشركة</h1>
-            <Swiper className={'max-w-2xl mb-6 pb-8'}
+            <Swiper className={'max-w-2xl mb-3 pb-8'}
                     translate={'yes'}
                     modules={[
                         EffectCube,
@@ -54,10 +54,7 @@ export default function Home( ) {
                         Navigation,Pagination,Scrollbar,A11y,Grid
                     ]}
                     pagination
-                    scrollbar={{
-
-                    }}
-
+                    scrollbar
 
                     effect={'cube'}
                     speed={900}

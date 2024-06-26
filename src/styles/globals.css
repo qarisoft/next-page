@@ -11,37 +11,34 @@
     backdrop-filter: blur(100px);
 
 }
-.intro {
-    h1, li, ul, p {
-        opacity: 0;
-        animation-name: fadeOut;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-}
+
 
 .swiper-slide {
     padding-bottom: 30px;
     padding-top: 10px;
     margin-bottom: auto;
     margin-top: auto;
+    .intro {
+        h1, li, ul, p {
+            opacity: 0;
+        }
+    }
 }
-
+.swiper-slide-prev{
+    .intro {
+        h1, li, ul, p {
+            opacity: 1;
+        }
+    }
+}
 .swiper-slide-active > .intro {
-    animation-name: fadeIn;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-
     h1, li, ul, p {
-        opacity: 0;
         animation-duration: 1.5s;
         animation-name: fInDown1;
-        animation-delay: .2s;
         animation-fill-mode: forwards;
-
     }
-
 }
+
 .slide{
     background-repeat: no-repeat;
     background-position: center;
