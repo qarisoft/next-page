@@ -18,19 +18,20 @@ export const Shareholders = () => {
     return (
         <>
             <Swiper
-                className={ ' w-[90%] md:w-[80%]  m-3'}
+                className={ ' w-[90%] md:w-[80%]  m-3 px-10'}
                 watchSlidesProgress
                 breakpoints={{
                     '@0.75': {
-                        spaceBetween:20,
                         slidesPerView: 1,
+                        spaceBetween:20,
                     },
                     '@1.00': {
                         slidesPerView: 2,
+                        spaceBetween:100,
                     },
-                    '@1.5': {
-                        slidesPerView: 4,
-                    },
+                    // '@1.5': {
+                    //     slidesPerView: 2,
+                    // },
                 }}
                 // slidesPerView={1}
 

@@ -513,7 +513,7 @@
     "@react-stately/overlays" "3.6.7"
     "@react-types/overlays" "3.8.7"
 
-"@nextui-org/navbar@^2.0.32", "@nextui-org/navbar@2.0.33":
+"@nextui-org/navbar@^2.0.33", "@nextui-org/navbar@2.0.33":
   version "2.0.33"
   resolved "https://registry.npmjs.org/@nextui-org/navbar/-/navbar-2.0.33.tgz"
   integrity sha512-WbPLEz6yE1vxKTqZDN85YPCWR/JSvpOO604xBpaaCf+OLfEsb+herz7+GDPnvHKaPDASoxU5WaSQJR9nrJ/YHg==
@@ -757,7 +757,7 @@
     "@nextui-org/shared-utils" "2.0.5"
     "@nextui-org/system-rsc" "2.1.2"
 
-"@nextui-org/spinner@2.0.30":
+"@nextui-org/spinner@^2.0.30", "@nextui-org/spinner@2.0.30":
   version "2.0.30"
   resolved "https://registry.npmjs.org/@nextui-org/spinner/-/spinner-2.0.30.tgz"
   integrity sha512-+oygL2dewHZzJiSUEIvzL0tIx+G+98mvO3ToFAMXaH0N3bOQNSiFDPwUHUx6PgAQ9pr9RKtdnb4ywstcG9j+Gg==
@@ -789,7 +789,7 @@
   dependencies:
     clsx "^1.2.1"
 
-"@nextui-org/system@>=2.0.0", "@nextui-org/system@>=2.1.0", "@nextui-org/system@2.2.2":
+"@nextui-org/system@^2.2.2", "@nextui-org/system@>=2.0.0", "@nextui-org/system@>=2.1.0", "@nextui-org/system@2.2.2":
   version "2.2.2"
   resolved "https://registry.npmjs.org/@nextui-org/system/-/system-2.2.2.tgz"
   integrity sha512-u30lWSIO4Q7DStiK5tJjDgKBQtmODeQZcC6llz973sJ9QlE4GeC1fgu0+/zXL8AZZ8o/iEXhHWXsZIJ26EquUQ==
@@ -842,7 +842,7 @@
     "@react-types/tabs" "3.3.7"
     scroll-into-view-if-needed "3.0.10"
 
-"@nextui-org/theme@>=2.1.0", "@nextui-org/theme@>=2.2.0", "@nextui-org/theme@2.2.6":
+"@nextui-org/theme@^2.2.6", "@nextui-org/theme@>=2.1.0", "@nextui-org/theme@>=2.2.0", "@nextui-org/theme@2.2.6":
   version "2.2.6"
   resolved "https://registry.npmjs.org/@nextui-org/theme/-/theme-2.2.6.tgz"
   integrity sha512-FyDp5edpmjbvPzRx+D2+Km1oZ73wQOzKMSBPomOgP0h9OFnnTHqKlmtbGhWSk2cEyYN9VsaGvqJTw8X35/aChQ==
