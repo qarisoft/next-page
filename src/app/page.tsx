@@ -11,12 +11,14 @@ import {siteConfig} from "@/config/site";
 import {useEffect, useState} from "react";
 import {Intro} from "@/components/index/Intro";
 import {Power} from "@/components/index/Power";
-import 'swiper/css'
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/grid';
-import 'swiper/css/grid';
+// import 'swiper/css'
+// import 'swiper/css/navigation';
+// import 'swiper/css/eff';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
+// import 'swiper/css/';
+import 'swiper/css/bundle';
+
 // const getData = async () => {
 //     const res = await fetch(`${siteConfig.links.backend}/home`)
 //     if (!res.ok) {
@@ -54,7 +56,11 @@ export default function Home( ) {
             <h1 className={'relative z-10 text-center font-semibold py-3 text-xl text-white border-b-1 mx-4'}>عن الشركة</h1>
             <Swiper className={''}
 
-                    modules={[Autoplay,Navigation,Pagination,Scrollbar,A11y,Grid]}
+                    modules={[
+                        EffectCube,
+                        Autoplay,
+                        Navigation,Pagination,Scrollbar,A11y,Grid
+                    ]}
                     pagination
                     scrollbar={{
 
@@ -63,18 +69,14 @@ export default function Home( ) {
                         '@0.75': {
                             slidesPerView: 1,
                             spaceBetween:10,
-
-
                         },
                         '@1': {
                             slidesPerView: 1,
-                            // cardsEffect:{
-                            //
-                            // },
                         },
                     }}
 
-
+                    effect={'cube'}
+                    speed={900}
                     loop={true}
                     autoplay={{
                         delay: 4000,
