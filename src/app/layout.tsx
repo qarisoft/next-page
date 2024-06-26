@@ -5,19 +5,9 @@ import {siteConfig} from "@/config/site";
 import {Image} from "@nextui-org/image";
 import React from "react";
 import {Navbar} from "@/components/navbar";
-import NextLink from "next/link";
 import { Link } from "@nextui-org/link";
 import {
-    TwitterIcon,
-    GithubIcon,
-    DiscordIcon,
-    SearchIcon,
-    HeartFilledIcon,
-    MoonFilledIcon,
-    SunFilledIcon,
-    Logo,
-    NextUILogo,
-    XIcon, FaceBookIcon, SnapIcon, InstagramIcon, TikTokIcon, WhatsAppIcon
+ WhatsAppIcon
 } from "@/components/icons";
 import {Social} from "@/components/Social";
 export const metadata: Metadata = {
@@ -103,8 +93,6 @@ export default function RootLayout({
                           </div>
                           <div className="">هاتف</div>
                           <p className='left' style={{direction: 'ltr'}}>+966 533307024</p>
-                          {/*<div className="">ادارة التسويق - الاستفسار</div>*/}
-
                           <Social/>
 
                       </div>
