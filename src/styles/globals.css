@@ -5,8 +5,19 @@
 *{
   animation-duration: 1s;
 }
-.navbar{
-  opacity: 0 !important;
+.intro{
+  opacity: 0;
+  /*animation-name: fadeOut;*/
+  /*animation-duration: 0.5s;*/
+  /*animation-fill-mode: forwards;*/
+}
+
+.swiper-slide-active >.intro{
+  /*background-color: #0dcaf0;*/
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+  animation-delay: .1s;
+  animation-fill-mode: forwards;
 }
 .slide-m{
   z-index: 1;

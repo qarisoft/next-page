@@ -27,6 +27,7 @@ import {
     SearchIcon,
 } from "@/components/icons";
 import React from "react";
+import {Social} from "@/components/Social";
 
 export const Navbar = () => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
@@ -59,7 +60,6 @@ export const Navbar = () => {
             classNames={{
 
                 item: [
-                    "navbar",
                     "flex",
                     "relative",
                     "h-full",
@@ -146,23 +146,20 @@ export const Navbar = () => {
                 </div>
                 <NavbarMenuItem className='flex justify-center gap-2 pt-4 border-t'>
 
-                    <div className="hover:cursor-pointer" onClick={onOpen}>
+                    {/*<div className="hover:cursor-pointer" onClick={onOpen}>*/}
 
-                        <TwitterIcon className="text-default-500" onClick={onOpen}/>
-                    </div>
+                    {/*    <TwitterIcon className="text-default-500" onClick={onOpen}/>*/}
+                    {/*</div>*/}
 
-                    <div className="hover:cursor-pointer" onClick={onOpen}>
+                    {/*<div className="hover:cursor-pointer" onClick={onOpen}>*/}
 
-                        <DiscordIcon className="text-default-500" onClick={onOpen}/>
-                    </div>
-                    <div className="hover:cursor-pointer" onClick={onOpen}>
-                        <GithubIcon className="text-default-500" onClick={onOpen}/>
-                    </div>
-
+                    {/*    <DiscordIcon className="text-default-500" onClick={onOpen}/>*/}
+                    {/*</div>*/}
+                    {/*<div className="hover:cursor-pointer" onClick={onOpen}>*/}
+                    {/*    <GithubIcon className="text-default-500" onClick={onOpen}/>*/}
+                    {/*</div>*/}
+                    <Social/>
                     <div className="w-3"></div>
-                    {/* <Link isExternal aria-label="Github" href={'#'}> */}
-                    {/* </Link> */}
-                    {/*<ThemeSwitch />*/}
                 </NavbarMenuItem>
             </NavbarMenu>
             <Modal

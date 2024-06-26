@@ -1,5 +1,5 @@
 import {siteConfig} from "@/config/site";
-import {Swiper} from "swiper/react";
+import { Swiper, SwiperSlide,} from 'swiper/react';
 interface PowerProps {
     title: string;
     description?: string;
@@ -14,6 +14,9 @@ export const Power = ({title,description,data}:PowerProps) => {
                     <div className={'textwhite  font-bold text-2xl mx-auto   my-3'}>{title}</div>
                         <div className="h-5"></div>
                             <div className=" flex  w-screen overflow-auto pb-2">
+                                <Swiper>
+
+                                </Swiper>
                             {
                                 siteConfig.power.map((value, index) => (
 

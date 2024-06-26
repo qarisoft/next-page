@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide,} from 'swiper/react';
 // import Image from "next/image";
 import {Service} from "@/components/index/Service";
-import {Autoplay,Navigation,Pagination,Scrollbar,A11y} from "swiper/modules";
+import {Autoplay,Navigation,Pagination,Scrollbar,A11y,Grid,EffectCards,EffectCube,EffectFlip,EffectFade,EffectCoverflow,EffectCreative} from "swiper/modules";
 // import {Information} from "@/components/Information";
 import {Shareholders} from "@/components/Shareholders";
 import {Achements} from "@/components/Achements";
@@ -15,6 +15,8 @@ import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/grid';
+import 'swiper/css/grid';
 // const getData = async () => {
 //     const res = await fetch(`${siteConfig.links.backend}/home`)
 //     if (!res.ok) {
@@ -52,18 +54,36 @@ export default function Home( ) {
             <h1 className={'relative z-10 text-center font-semibold py-3 text-xl text-white border-b-1 mx-4'}>عن الشركة</h1>
             <Swiper className={''}
 
-                    modules={[Autoplay,Navigation,Pagination,Scrollbar,A11y]}
+                    modules={[Autoplay,Navigation,Pagination,Scrollbar,A11y,Grid]}
                     pagination
                     scrollbar={{
 
                     }}
+                    breakpoints={{
+                        '@0.75': {
+                            slidesPerView: 1,
+                            spaceBetween:10,
+
+
+                        },
+                        '@1': {
+                            slidesPerView: 1,
+                            // cardsEffect:{
+                            //
+                            // },
+                        },
+                    }}
+
+
                     loop={true}
                     autoplay={{
-                        delay: 5000,
+                        delay: 4000,
+
                     }}
 
             slidesPerView={1}>
                 <SwiperSlide className={'my-auto h-full bg-amber- '} >
+
                     <Intro title={'من نحن؟'}   description={siteConfig.intro}/>
                 </SwiperSlide>
                 <SwiperSlide className={'my-auto'}>

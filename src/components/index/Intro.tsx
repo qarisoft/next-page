@@ -8,9 +8,13 @@ export const Intro = ({title,description,data}:IntroProps) => {
     return (
         <>
             <div style={{ backgroundImage:"url('./image/back2.png')", }}
-                className="  bg-white bg-cover bg-no-repeat  p-4 m-2 me-0 border shadow h-full">
-                <div className="text max-w-2xl md:p-6   ">
-                    <h1 className='font-bold text-2xl mb-2 -ms-4 bg-[#f7942e] w-fit rounded-e-2xl p-1 pe-9'>
+                className=" intro bg-white bg-cover bg-no-repeat  p-4 m-2  border shadow h-full relative
+                ms-3 me-1
+                md:max-w-2xl  md:mx-auto
+
+                                ">
+                <div className="text max-w-2xl md:p-6  mt-12 md:mt-6 ">
+                    <h1 className='font-bold text-2xl mb-2  absolute top-3 right-0 bg-[#f7942e] w-fit rounded-e-2xl p-1 pe-9'>
                         {title}
                     </h1>
                     {
