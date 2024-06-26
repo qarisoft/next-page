@@ -44,7 +44,6 @@ export default function Home( ) {
 
             </style>
             <div className="absolute h-full w-full bg-mprimary opacity-75">
-
             </div>
             <h1 className={'relative z-10 text-center font-semibold py-3 text-xl text-white border-b-1 mx-4'}>عن الشركة</h1>
             <Swiper className={'max-w-2xl mb-3 pb-8'}
@@ -56,13 +55,11 @@ export default function Home( ) {
                     ]}
                     pagination
                     scrollbar
-
                     effect={'cube'}
                     speed={900}
                     loop={true}
                     autoplay={{
                         delay: 4000,
-
                     }}
 
             slidesPerView={1}>
