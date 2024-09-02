@@ -8,15 +8,15 @@ interface PowerProps {
 export const Power = ({title,description,data}:PowerProps) => {
     return (
         <>
-            <div className="text-center bg-gray-100 relative pt-3"
+            <div className="text-center bg-gray-100 relative pt-3 "
             >
-                    <div className="    bg-mprimar  justify-center">
+                    <div className="    bg-mprimar  justify-center  ">
                     <div className={'textwhite  font-bold text-2xl mx-auto   my-3'}>{title}</div>
                         <div className="h-5"></div>
-                            <div className=" flex  w-screen overflow-auto pb-2">
-                                <Swiper>
+                            <div className=" flex  w-screen  px-4 lg:w-[90vw] mx-auto  overflow-auto pb-2">
+                                {/* <Swiper>
 
-                                </Swiper>
+                                </Swiper> */}
                             {
                                 siteConfig.power.map((value, index) => (
 
@@ -28,7 +28,6 @@ export const Power = ({title,description,data}:PowerProps) => {
                                     </div>
                                 ))
                             }
-                        {/*</Swiper>*/}
                             </div>
                     </div>
             </div>

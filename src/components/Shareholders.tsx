@@ -12,6 +12,12 @@ export const Shareholders = () => {
         './image/show/show2.jpeg',
         './image/show/show3.jpeg',
         './image/show/show4.jpeg',
+        './image/hero/rabwa/1.jpeg',
+        './image/hero/rabwa/2.jpeg',
+        './image/hero/rabwa/3.jpeg',
+        './image/hero/rabwa/4.jpeg',
+        './image/hero/rabwa/5.jpeg',
+        './image/hero/rabwa/6.jpeg',
 
     ]
 

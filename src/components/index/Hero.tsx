@@ -50,7 +50,7 @@ export const Hero = ({images}:HeroProps)=>{
                     <div className="h-full w-full absolute top-0 left-0 bg-gray-800 opacity-10 overlay-color"></div>
 
 
-                    <div className="absolute w-full h-full  flex justify-center items-center slide-c">
+                    <div className="absolute w-full h-full  flex justify-center  items-center slide-c">
                         <Item data={i} className={`animate__animate ${index == activeI ? 'fdInDown' : ''}`}
                               c={index == activeI ? 'nh' : 'hidden'} n={activeI}/>
                     </div>
@@ -83,9 +83,9 @@ interface Props {
 function Item({className, c, data, n}: Props) {
     return (
 
-        <div className={`  max-w-2xl px-2 ${c}    mx-auto   sc`}>
+        <div className={`  max-w-2xl px-2 ${c}       sc`}>
 
-            <h1 className={`text-[#b79d41] text-3xl font-bold   ad-1 ${className}`}>احدث مشاريعنا</h1>
+            <h1 className={`text-[#f0cb45] text-4xl font-bold   ad-1 ${className}`}>احدث مشاريعنا</h1>
                 <div className="h-14"></div>
                 <h1 className={`text-[#d7d7d7] text-5xl md:text-8xl font-bold mb-5  ad-2 ${className}`}>
                     {data.title}

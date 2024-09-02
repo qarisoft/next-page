@@ -1,3 +1,5 @@
+// import { title } from "process";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -61,7 +63,33 @@ export const siteConfig = {
                  '                    minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda\n' +
                  '                    laudantium?',
              image:"./image/hero/marwah5.jpeg",
-         }
+         },
+        // {
+        //     title:'الربوة',
+        //     description:'',
+        //     image:'./image/hero/rabwa/1.jpeg'
+        //  },{
+        //     title:'الربوة',
+        //     description:'',
+        //     image:'./image/hero/rabwa/2.jpeg'
+        //  },{
+        //     title:'الربوة',
+        //     description:'',
+        //     image:'./image/hero/rabwa/3.jpeg'
+        //  },{
+        //     title:'الربوة',
+        //     description:'',
+        //     image:'./image/hero/rabwa/4.jpeg'
+        //  },{
+        //     title:'الربوة',
+        //     description:'',
+        //     image:'./image/hero/rabwa/5.jpeg'
+        //  },
+        // {
+        //     title:'الربوة',
+        //     description:'',
+        //     image:'./image/hero/rabwa/6.jpeg'
+        //  }
     ],
 
     navItems: [
