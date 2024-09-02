@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {Card, Skeleton} from "@nextui-org/react";
+// import {Card, Skeleton} from "@nextui-org/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

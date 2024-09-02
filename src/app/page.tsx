@@ -1,16 +1,16 @@
 "use client"
-import { Swiper, SwiperSlide,} from 'swiper/react';
+// import { Swiper, SwiperSlide,} from 'swiper/react';
 import {Service} from "@/components/index/Service";
-import {Autoplay,Navigation,Pagination,Scrollbar,A11y,Grid,EffectCards,EffectCube,EffectFlip,EffectFade,EffectCoverflow,EffectCreative} from "swiper/modules";
+// import {Autoplay,Navigation,Pagination,Scrollbar,A11y,Grid,EffectCards,EffectCube,EffectFlip,EffectFade,EffectCoverflow,EffectCreative} from "swiper/modules";
 import {Shareholders} from "@/components/Shareholders";
 import {Achievements} from "@/components/Achements";
 import {Hero} from "@/components/index/Hero";
 import {siteConfig} from "@/config/site";
 import {useEffect, useState} from "react";
-import {Intro} from "@/components/index/Intro";
+// import {Intro} from "@/components/index/Intro";
 import {Power} from "@/components/index/Power";
 import 'swiper/css/bundle';
-import {Spinner} from "@nextui-org/spinner";
+// import {Spinner} from "@nextui-org/spinner";
 import {Map} from "@/components/Map";
 import {About} from "@/components/index/About";
 

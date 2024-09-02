@@ -1,8 +1,9 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure, RadioGroup, Radio} from "@nextui-org/react";
-
+// import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure, RadioGroup, Radio} from "@nextui-org/react";
+// import {  Modal,   ModalContent,   ModalHeader,   ModalBody,   ModalFooter} from "@nextui-org/react";
+import {  Modal,   ModalContent,   ModalHeader,   ModalBody,   ModalFooter, useDisclosure} from "@nextui-org/modal";
 import {
     Navbar as NextUINavbar,
     NavbarContent,
@@ -183,3 +184,7 @@ export const Navbar = () => {
 
     );
 };
+// function useDisclosure(): { isOpen: any; onOpen: any; onOpenChange: any; } {
+//     throw new Error('Function not implemented.');
+// }
+

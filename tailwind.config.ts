@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
-import {nextui} from "@nextui-org/react";
-
+// import {nextui} from "@nextui-org/react";
+import {nextui} from '@nextui-org/theme'
 /** @type {import('tailwindcss').Config} */
 const config: Config = {
   content: [
@@ -31,25 +31,3 @@ const config: Config = {
   plugins: [nextui()]
 };
 export default config;
-// import {nextui} from '@nextui-org/theme'
-//
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: [
-//     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-//     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-//     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-//     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
-//   ],
-//   theme: {
-//     extend: {
-//       fontFamily: {
-//         sans: ["Tajawal"],
-//         // sans: ["var(--font-sans)"],
-//         mono: ["var(--font-geist-mono)"],
-//       },
-//     },
-//   },
-//   darkMode: "class",
-//   plugins: [nextui()],
-// }
