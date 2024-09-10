@@ -4,7 +4,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
     name: "omranhouses",
-    description: "Make beautiful websites regardless of your design experience.",
+    description: "",
      index : [
         {
 

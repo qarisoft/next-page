@@ -21,9 +21,11 @@ import {
     DiscordIcon,
     SearchIcon,
 } from "@/components/icons";
-import React from "react";
+import React, {useState} from "react";
 import {Social} from "@/components/Social";
-
+// import {usePress} from "@react-aria/interactions";
+// import {usePress} from "@react-aria/interactions";
+// import {usePress} from 'react-aria';
 export const Navbar = () => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
     const [modalPlacement, setModalPlacement] = React.useState("auto");
@@ -47,11 +49,14 @@ export const Navbar = () => {
             type="search"
         />
     );
-
+    const [selected,setSelected]=useState(false);
+    // let [events, setEvents] = React.useState([]);
+    // let { pressProps, isPressed } = usePress({
+    //
+    // });
     return (
         <NextUINavbar
 
-            isBordered
             classNames={{
 
                 item: [
@@ -68,17 +73,14 @@ export const Navbar = () => {
                     "data-[active=true]:after:rounded-[2px]",
                     "data-[active=true]:after:bg-primary",
                 ],
-            }}
-        >
+            }}>
             <NavbarBrand className='h-full' >
                 <img src="/logo.jpeg" alt=""    className='h-full' />
             </NavbarBrand>
-
-
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
 
-                {siteConfig.navItems.map((item) => (
-                    <NavbarItem className='' key={item.href}
+                {siteConfig.navItems.map((item,i) => (
+                    <NavbarItem className='' key={`${item.href}-${i}`}
 
                                 isActive={usePathname()===item.href}
                     >
@@ -116,20 +118,19 @@ export const Navbar = () => {
 
             </NavbarContent>
 
-
             <NavbarContent className="sm:hidden  pl-4" justify="end">
-
-                <NavbarMenuToggle />
+                {/*<button onClick={setSelected}>open</button>*/}
+                <NavbarMenuToggle   />
             </NavbarContent>
 
 
-            <NavbarMenu>
+            <NavbarMenu  >
                 {searchInput}
                 <div className=" mt-2 flex flex-col gap-2 ">
                     {siteConfig.navItems.map((item, index) => (
                         <NavbarMenuItem key={`${item}-${index}`} className='pt-1 border-t px-4'>
 
-                            <NextLink
+                            <NextLink  onClick={(_)=>setSelected((a)=>!a)}
                                 className={`text-${usePathname()===item.href?"primary":"foreground"} `}
                                 href={item.href}
                             >

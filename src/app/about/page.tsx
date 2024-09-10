@@ -1,5 +1,6 @@
 import { FacebookB, FaceBookIcon, InstaB,SnapChatB,ThreeDots,TikTokB,WhatsAppB,XIcon } from "@/components/icons";
 import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
+import {Link} from "@nextui-org/link";
 
 export default function AboutPage() {
 
@@ -54,14 +55,17 @@ export default function AboutPage() {
 
       {data.map((a,i)=>(
 
-      <Card className="w-full en ease-in duration-300" isHoverable isPressable > 
-      <CardHeader className="flex gap-3">
+      <Card className="w-full en ease-in duration-300" isHoverable isPressable  key={i}>
+
+      <Link className={'w-full'} href={a.href} isExternal >
+      <CardHeader className="flex gap-3 bg-amber" >
         <a.svg/>
         <div className="flex flex-col text-center  flex-1">
-          <p className="sm:text-sm md:text-md ">{a.title}</p>
+          <p className="sm:text-sm md:text-md text-black ">{a.title}</p>
         </div>
         <ThreeDots/>
       </CardHeader>
+      </Link>
     </Card>
       ))}
     </div>

@@ -6,7 +6,7 @@ export const Social = () => {
     return (
             <div className="flex bg-blue-6 align-middl items-center align-bottom justify-center gap-2">
                 <Link  href={'https://x.com/almnazl8?t=MNVcmb2lk1gSSUMjdh3AmA&s=09'}>
-                    <XIcon/>
+                    <XIcon size={24}/>
                 </Link>
                 <Link href={'https://www.facebook.com/mnazel.alomran?mibextid=ZbWKwL'}>
                     <FaceBookIcon/>

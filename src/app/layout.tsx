@@ -88,11 +88,12 @@ export default function RootLayout({
                       </div>
 
                       <div className="flex flex-col gap-1 text-center text-large">
-                          <div className="font-extrabold"> تواصل معنا</div>
+                          <a href={'https://maps.google.com/maps/dir//%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D9%86%D8%A7%D8%B2%D9%84+%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86+%D9%84%D8%AA%D8%B7%D9%88%D9%8A%D8%B1+%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1+%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A+%D8%A8%D8%B1%D8%AC+WA+Prince+Mohammed+Bin+Abdulaziz+St,+Al-Safa+Jeddah+13451,+Saudi+Arabia%E2%80%AD/@21.5670296,39.2247743,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x15c3d107b0405037:0x20e3c5c1ae2d7034'} className="font-extrabold"> تواصل معنا
                           <div className="flex text-center align-middle   justify-center gap-2">
 
                               <img className="" width={70} src="./image/1.jpg" alt={'dsda'}/>
                           </div>
+                          </a>
                           <div className="">هاتف</div>
                           <p className='left' style={{direction: 'ltr'}}>+966 533307024</p>
                           <Social/>
@@ -106,6 +107,7 @@ export default function RootLayout({
                   </div>
               </footer>
           </div>
+
           <Link href={'https://wa.me/966533307024'}
                 className="fixed bg- text-center flex justify-center  bottom-0 z-10  h-12 w-12 rounded-full m-3"
           >
