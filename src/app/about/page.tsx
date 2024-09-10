@@ -39,7 +39,7 @@ export default function AboutPage() {
 
 
   return (
-    <div className="w-full  lg:h-[85vh] p-2 lg:space-y-10 space-y-5 en py-5 " >
+    <div className="w-full  h-[85vh] p-2 lg:space-y-10 space-y-5 en py-5 " >
         <div className="flex justify-center">
           <div className="mx-1">
           <a href="tel:966533307024">+966533307024</a>
@@ -64,10 +64,6 @@ export default function AboutPage() {
       </CardHeader>
     </Card>
       ))}
-      
-      
- 
-
     </div>
   );
 }

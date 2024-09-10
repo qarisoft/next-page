@@ -10,6 +10,8 @@ import {
  WhatsAppIcon
 } from "@/components/icons";
 import {Social} from "@/components/Social";
+
+
 export const metadata: Metadata = {
   title: {
       default: siteConfig.name,

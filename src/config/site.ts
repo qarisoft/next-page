@@ -99,15 +99,15 @@ export const siteConfig = {
         },
         {
             label: "عن الشركة",
-            href: "/docs",
+            href: "#",
         },
         {
             label: "مشاريعنا",
-            href: "/pricing",
+            href: "#",
         },
         {
             label: "خدماتنا",
-            href: "/blog",
+            href: "#",
         },
         {
             label: "اتصل بنا",
