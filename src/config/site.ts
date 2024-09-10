@@ -150,11 +150,11 @@ export const siteConfig = {
     ],
     links: {
         backend:'http://127.0.0.1:8000/api',
-        github: "https://github.com/nextui-org/nextui",
-        twitter: "https://twitter.com/getnextui",
-        docs: "https://nextui.org",
-        discord: "https://discord.gg/9b6yyZKmH4",
-        sponsor: "https://patreon.com/jrgarciadev",
+        github: "",
+        twitter: "",
+        docs: "",
+        discord: "",
+        sponsor: "",
     },
     serviceList:[
         {

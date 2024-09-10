@@ -1,5 +1,7 @@
 @import "./app.css";
-
+.en{
+    direction: ltr;
+}
 ::-webkit-scrollbar {
     display: none;
 }
