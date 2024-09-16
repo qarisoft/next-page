@@ -95,7 +95,7 @@ export const siteConfig = {
         },
         {
             label: "اتصل بنا",
-            href: "/about",
+            href: "/contact",
         },
     ],
     navMenuItems: [
