@@ -75,7 +75,7 @@ export const Navbar = () => {
                 ],
             }}>
             <NavbarBrand className='h-full' >
-                <img src="/logo.jpeg" alt=""    className='h-full' />
+                <img src="/logo.png" alt=""    className='h-full' />
             </NavbarBrand>
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
 

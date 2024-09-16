@@ -13,7 +13,8 @@ import 'swiper/css/bundle';
 // import {Spinner} from "@nextui-org/spinner";
 import {Map} from "@/components/Map";
 import {About} from "@/components/index/About";
-
+import { ProjectItem } from "@/types";
+import { projects } from "@/config/projects";
 // const getData = async () => {
 //     const res = await fetch(`${siteConfig.links.backend}/home`)
 //     if (!res.ok) {
@@ -33,12 +34,28 @@ export default function Home( ) {
     //     }
     // }, [data]);
 
+    const dataList=():ProjectItem[]=>{
+        let a: ProjectItem[]=[]
+        for (let index = 0; index < projects.length; index++) {
+            const project = projects[index];
+            for (let i = 0; i < project.images.length; i++) {
+                a.push({
+                    image:project.images[i],
+                    title:project.title,
+                    description:project.description
+                })
 
+                
+            }
+            
+        }
+        return a
+    }
 
     return (
         <>
 
-        <Hero images={siteConfig.index} />
+        <Hero images={dataList()} />
         <About/>
         <Power title={'لماذا القوة العقارية ؟'}/>
         <Service title={'خدماتنا'}/>
