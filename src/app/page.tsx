@@ -48,8 +48,12 @@ export default function Home( ) {
 
     return (
         <>
+            {data.length>0?(
 
-        <Hero images={dataList(data)} />
+            <Hero images={dataList(data)} />
+            ):(
+                <div className="" style={{height:'90vh', backgroundImage:"url('./image/11.jpg')"}}>loading...</div>
+            )}
         <About/>
         <Power title={'لماذا القوة العقارية ؟'}/>
         <Service title={'خدماتنا'}/>

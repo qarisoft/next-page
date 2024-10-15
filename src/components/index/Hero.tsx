@@ -37,7 +37,7 @@ export const Hero = ({images}:HeroProps)=>{
                 <div className="absolute w-full h-full blur"  style={{ backgroundImage:"url('./image/11.jpg')"}}></div>
             {images.map((i, index) => (
                 <div key={index}>
-                    <div className="bg-red-600 ">
+                    <div className=" ">
                         <div
                             className={`absolute w-full h-full bg-mprimar  slide slide-m 
                             ${index == activeI ? '' : 'hidden'} `}
@@ -48,9 +48,13 @@ export const Hero = ({images}:HeroProps)=>{
                                 ${index == activeII ? ' animate__animated animate__fadeOut ' : 'hidden'}`}
                                 style={{backgroundImage: `url(${i.image.path})`}}>
                         </div>
+
+
+                        <div className="h-full w-full absolute top-0 left-0 bg-gray-800 opacity-25 overlay-color"
+                        style={{backgroundColor:'black',zIndex:3}}
+                        ></div>
                     </div>
 
-                        <div className="h-full w-full absolute top-0 left-0 bg-gray-800 opacity-11 overlay-color"></div>
 
 
                     <div className=" absolute w-full h-full  flex justify-center  items-center slide-c ">
