@@ -10,6 +10,7 @@ import {
  WhatsAppIcon
 } from "@/components/icons";
 import {Social} from "@/components/Social";
+import {Project} from "@/config/projects";
 
 
 export const metadata: Metadata = {
@@ -30,6 +31,10 @@ export const viewport: Viewport = {
         { media: "(prefers-color-scheme: dark)", color: "black" },
     ],
 };
+
+
+
+
 export default function RootLayout({
   children,
 }: Readonly<{

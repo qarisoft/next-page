@@ -1,43 +1,37 @@
 "use client"
-// import { Swiper, SwiperSlide,} from 'swiper/react';
 import {Service} from "@/components/index/Service";
-// import {Autoplay,Navigation,Pagination,Scrollbar,A11y,Grid,EffectCards,EffectCube,EffectFlip,EffectFade,EffectCoverflow,EffectCreative} from "swiper/modules";
 import {Shareholders} from "@/components/Shareholders";
 import {Achievements} from "@/components/Achements";
 import {Hero} from "@/components/index/Hero";
 import {siteConfig} from "@/config/site";
 import {useEffect, useState} from "react";
-// import {Intro} from "@/components/index/Intro";
 import {Power} from "@/components/index/Power";
 import 'swiper/css/bundle';
-// import {Spinner} from "@nextui-org/spinner";
 import {Map} from "@/components/Map";
 import {About} from "@/components/index/About";
 import { ProjectItem } from "@/types";
-import { projects } from "@/config/projects";
-// const getData = async () => {
-//     const res = await fetch(`${siteConfig.links.backend}/home`)
-//     if (!res.ok) {
-//         throw new Error('Failed to fetch data')
-//     }
-//         return await res.json()
-// }
-
+import {Project, projects} from "@/config/projects";
+const getData = async () => {
+    const res = await fetch(`${siteConfig.links.backend}/projects`)
+    if (!res.ok) {
+        throw new Error('Failed to fetch data')
+    }
+        return await res.json()
+}
 export default function Home( ) {
-    const [data, setData] = useState([]);
-    // useEffect(() => {
-    //     if (data.length==0){
-    //         getData().then((a)=>{
-    //             setData(a)
-    //             console.log(a)
-    //         })
-    //     }
-    // }, [data]);
+    const [data, setData] = useState<Project[]>([]);
+    useEffect(() => {
+        if (data.length==0){
+            getData().then((a)=>{
+                setData(a)
+            })
+        }
+    }, [data]);
 
-    const dataList=():ProjectItem[]=>{
+    const dataList=(projectList:Project[]):ProjectItem[]=>{
         let a: ProjectItem[]=[]
-        for (let index = 0; index < projects.length; index++) {
-            const project = projects[index];
+        for (let index = 0; index < projectList.length; index++) {
+            const project = projectList[index];
             for (let i = 0; i < project.images.length; i++) {
                 a.push({
                     image:project.images[i],
@@ -55,7 +49,7 @@ export default function Home( ) {
     return (
         <>
 
-        <Hero images={dataList()} />
+        <Hero images={dataList(data)} />
         <About/>
         <Power title={'لماذا القوة العقارية ؟'}/>
         <Service title={'خدماتنا'}/>

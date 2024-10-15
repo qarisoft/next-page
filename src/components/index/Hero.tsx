@@ -49,15 +49,8 @@ export const Hero = ({images}:HeroProps)=>{
                                 style={{backgroundImage: `url(${i.image.path})`}}>
                         </div>
                     </div>
-                    {/* <ImageComponents active={index === activeII} path={i.image.path}/> */}
-                    {/* <div className="">
-
-                    
-                    </div> */}
-                    {/* {i.image.overlay && ( */}
 
                         <div className="h-full w-full absolute top-0 left-0 bg-gray-800 opacity-11 overlay-color"></div>
-                    {/* )} */}
 
 
                     <div className=" absolute w-full h-full  flex justify-center  items-center slide-c ">

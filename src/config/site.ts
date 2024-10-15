@@ -7,35 +7,16 @@ export const siteConfig = {
     description: "",
      index : [
         {
-
-            title:'الربوة',
-            description:'',
-            image:"./image/hero/rapwah1.jpeg",
-
-        },
-        {
             title:'المروة',
             description:'',
             image:"./image/hero/marwah1.jpeg",
         },
-
-         {
-             title:'الربوة',
-             description:'',
-             image:"./image/hero/rapwah2.jpeg",
-         },
          {
              title:'المروة',
              description:'',
              image:"./image/hero/marwah2.jpeg",
          },
-
          {
-             title:'الربوة',
-             description:'',
-             image:"./image/hero/rapwah3.jpeg",
-         }
-         ,{
              title:'المروة',
              description:'',
              image:"./image/hero/marwah3.jpeg",
@@ -48,32 +29,6 @@ export const siteConfig = {
              description:'',
              image:"./image/hero/marwah5.jpeg",
          },
-        // {
-        //     title:'الربوة',
-        //     description:'',
-        //     image:'./image/hero/rabwa/1.jpeg'
-        //  },{
-        //     title:'الربوة',
-        //     description:'',
-        //     image:'./image/hero/rabwa/2.jpeg'
-        //  },{
-        //     title:'الربوة',
-        //     description:'',
-        //     image:'./image/hero/rabwa/3.jpeg'
-        //  },{
-        //     title:'الربوة',
-        //     description:'',
-        //     image:'./image/hero/rabwa/4.jpeg'
-        //  },{
-        //     title:'الربوة',
-        //     description:'',
-        //     image:'./image/hero/rabwa/5.jpeg'
-        //  },
-        // {
-        //     title:'الربوة',
-        //     description:'',
-        //     image:'./image/hero/rabwa/6.jpeg'
-        //  }
     ],
 
     navItems: [
@@ -133,7 +88,7 @@ export const siteConfig = {
         },
     ],
     links: {
-        backend:'http://127.0.0.1:8000/api',
+        backend:'https://admin.omranhouses.com/api',
         github: "",
         twitter: "",
         docs: "",
