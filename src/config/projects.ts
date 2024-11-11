@@ -1,6 +1,10 @@
-import {ProjectImage} from "@/types";
+// import {ProjectImage} from "@/types";
 
-
+export type ProjectImage={
+  path:string
+  description?:string
+  overlay?:boolean
+}
 export type Project={
     title:string
     images:ProjectImage[]
