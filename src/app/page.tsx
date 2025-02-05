@@ -26,7 +26,10 @@ export default function Home() {
   useEffect(() => {
     if (data.length == 0) {
       getData().then((a) => {
-        setData(a);
+        if(a){
+
+          setData(a);
+        }
       });
     }
   }, [data]);
